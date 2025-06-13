@@ -171,16 +171,36 @@
     }
 
     .social-links a {
-  margin: 0 0.8rem;
-  color: #00fff7;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
+    margin: 0 0.8rem;
+    color: #00fff7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    }
 
-.social-links a:hover {
-  color: #b700ff;
-  text-shadow: 0 0 8px #b700ff, 0 0 16px #ff0000, 0 0 24px #ffffff;
-}
+    .social-links a:hover {
+    color: #b700ff;
+    text-shadow: 0 0 8px #b700ff, 0 0 16px #ff0000, 0 0 24px #ffffff;
+    }
+
+    /* Responsive code */
+
+    @media (max-width: 768px) {
+    nav ul { flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .cyberpunk-header, header { flex-direction: column; text-align: center; padding: 15px; }
+    .cyberpunk-main, main { padding: 30px 10px; }
+    .hero h1, .projects-section h1, .glitch { font-size: 2rem; }
+    .subtitle { font-size: 1rem; }
+    .terminal { width: 90%; }
+    .projects-grid { gap: 15px; }
+    .project-image { height: 150px; }
+    .contact-container { flex-direction: column; gap: 20px; padding: 10px; }
+    .contact-info, .contact-form { width: 100%; }
+    }
+
+    @media (max-width: 480px) {
+    .logo { font-size: 1.5rem; }
+    }
+
 
   </style>
 </head>
