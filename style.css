@@ -328,3 +328,23 @@ nav a.active {
         opacity: 0;
     }
 }
+/* [Same base styles from your original style.css] */
+/* ... */
+
+@media (max-width: 768px) {
+  nav ul { flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .cyberpunk-header, header { flex-direction: column; text-align: center; padding: 15px; }
+  .cyberpunk-main, main { padding: 30px 10px; }
+  .hero h1, .projects-section h1, .glitch { font-size: 2rem; }
+  .subtitle { font-size: 1rem; }
+  .terminal { width: 90%; }
+  .projects-grid { gap: 15px; }
+  .project-image { height: 150px; }
+  .contact-container { flex-direction: column; gap: 20px; padding: 10px; }
+  .contact-info, .contact-form { width: 100%; }
+}
+
+/* Add some catch-all mobile tweaks: */
+@media (max-width: 480px) {
+  .logo { font-size: 1.5rem; }
+}
