@@ -328,3 +328,353 @@ nav a.active {
         opacity: 0;
     }
 }
+
+/* Cyberpunk Theme */
+:root {
+    --neon-pink: #ffffff;
+    --neon-blue: #000000;
+    --neon-purple: #ffffff;
+    --neon-green: #aaaaaa;
+    --dark-bg: #000000;
+    --darker-bg: #8774b9;
+    --text-color: #d1f7ff;
+    --glow: 0 0 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--text-color);
+    background-color: var(--dark-bg);
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Animated Background */
+.cyberpunk-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+        var(--darker-bg) 0%, 
+        var(--dark-bg) 50%, 
+        #1a0033 100%);
+    z-index: -2;
+    animation: bgPulse 15s infinite alternate;
+}
+
+@keyframes bgPulse {
+    0% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+/* Scanlines Effect */
+.scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(0, 0, 0, 0.2) 51%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    background-size: 100% 4px;
+    z-index: -1;
+    pointer-events: none;
+    animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+}
+
+/* Header Styles */
+.cyberpunk-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--neon-green);
+    text-shadow: var(--glow) var(--neon-green);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav a.active {
+    color: var(--neon-blue);
+    text-shadow: var(--glow) var(--neon-blue);
+}
+
+/* Main Content */
+.cyberpunk-main {
+    min-height: 80vh;
+    padding: 50px 5%;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    color: var(--neon-blue);
+    text-shadow: var(--glow) var(--neon-blue);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: var(--neon-pink);
+    text-shadow: var(--glow) var(--neon-pink);
+}
+
+/* Terminal */
+.terminal {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(5, 5, 20, 0.8);
+    border: 1px solid var(--neon-blue);
+    box-shadow: 0 0 20px var(--neon-blue);
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.terminal-header {
+    background: rgba(5, 5, 20, 0.9);
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--neon-blue);
+}
+
+.terminal-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.terminal-btn.red { background: #ff5f56; }
+.terminal-btn.yellow { background: #ffbd2e; }
+.terminal-btn.green { background: #27c93f; }
+
+.terminal-title {
+    margin-left: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.9rem;
+    color: var(--neon-green);
+}
+
+.terminal-body {
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+}
+
+.terminal-body p {
+    margin-bottom: 10px;
+}
+
+
+
+.command {
+    color: var(--neon-green);
+    font-weight: bold;
+}
+
+/* Footer */
+.cyberpunk-footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Glitch Effect */
+.glitch {
+    position: relative;
+}
+
+.glitch::before, .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.glitch::before {
+    color: var(--neon-blue);
+    z-index: -1;
+    animation: glitch-effect 3s infinite;
+}
+
+.glitch::after {
+    color: var(--neon-pink);
+    z-index: -2;
+    animation: glitch-effect 2s infinite reverse;
+}
+
+@keyframes glitch-effect {
+    0% { transform: translate(0); }
+    20% { transform: translate(-3px, 3px); }
+    40% { transform: translate(-3px, -3px); }
+    60% { transform: translate(3px, 3px); }
+    80% { transform: translate(3px, -3px); }
+    100% { transform: translate(0); }
+}
+
+/* Neon Hover Effect */
+.neon-hover {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.neon-hover:hover {
+    color: var(--neon-pink);
+    text-shadow: var(--glow) var(--neon-pink);
+}
+
+.neon-hover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--neon-pink);
+    transition: width 0.3s ease;
+}
+
+.neon-hover:hover::after {
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cyberpunk-header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .logo {
+        margin-bottom: 20px;
+    }
+    
+    nav ul {
+        gap: 15px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+/* Particles */
+.particles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) translateX(20px);
+        opacity: 0;
+    }
+}
+
+/* Add this at the bottom of style.css */
+
+@media (max-width: 768px) {
+  nav ul { flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .cyberpunk-header, header { flex-direction: column; text-align: center; padding: 15px; }
+  .cyberpunk-main, main { padding: 30px 10px; }
+  .hero h1, .projects-section h1, .glitch { font-size: 2rem; }
+  .subtitle { font-size: 1rem; }
+  .terminal { width: 90%; }
+  .projects-grid { gap: 15px; }
+  .project-image { height: 150px; }
+  .contact-container { flex-direction: column; gap: 20px; padding: 10px; }
+  .contact-info, .contact-form { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .logo { font-size: 1.5rem; }
+}
