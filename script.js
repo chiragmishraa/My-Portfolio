@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
             terminalText.innerHTML += '<p>> System ready.</p>';
         }, 2000);
         setTimeout(() => {
-            terminalText.innerHTML += '<p>> Type <span class="command">\'help\'</span> for commands.</p>';
+            terminalText.innerHTML += '<p>> Initialisation successful.</p>';
         }, 4000);
         setTimeout(() => {
-            terminalText.innerHTML += '<p>> REJECTED BY HOST</p>';
+            terminalText.innerHTML += '<p>> Found a message by Host.</p>';
         }, 6000);
     }
 
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             const cursor = document.createElement('span');
             cursor.className = 'cursor';
-            cursor.textContent = 'TERMINAL STOPPED !';
+            cursor.textContent = 'HELLO THERE !';
             terminal.appendChild(cursor);
             
             setInterval(() => {
