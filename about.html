@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirag's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo5.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Rajdhani', sans-serif;
+            background: #0f0f0f;
+            color: #00fff7;
+            overflow-x: hidden;
+        }
+        .cyberpunk-main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-height: -100vh;
+            padding: 4rem;
+            background: radial-gradient(circle at top, #1a1a1a, #000);
+        }
+        .about-section {
+            max-width: 1000px;
+            width: 300%;
+            text-align: center;
+        }
+        .glitch {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            position: relative;
+            color: #00fff7;
+            text-shadow: 0 0 5px #00fff7;
+        }
+            .glitch2 {
+            height: 80px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            position: relative;
+            color: #00fff7;
+            text-shadow: 0 0 5px #00fff7;
+        }
+        .cyber-card {
+            background: #000000;
+            border: 1px solid #00fff7;
+            box-shadow: 0 0 15px #00fff766;
+            padding: 4rem;
+            margin: 2rem auto;
+            border-radius: 12px;
+            position: relative;
+            color: #fff;
+        }
+        .avatar-container {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #202020;
+            margin: 0 auto 3rem;
+            border: 2px solid #00fff7;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 50%;
+            }
+
+            .avatar-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 12px #00fff7;
+            }
+
+                    
+        .bio p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+        .highlight {
+            color: #ff007c;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .skill-category {
+            background: #000000;
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid #00fff7;
+        }
+        .skill-category h3 {
+            border-bottom: 1px solid #00fff7;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .skill-bar {
+            display: inline-block;
+            height: 6px;
+            background: #ff007c;
+            margin-left: 10px;
+            vertical-align: middle;
+            border-radius: 4px;
+            width: 0;
+            transition: width 1s ease-in-out;
+        }
+        li:hover .skill-bar {
+            width: attr(data-level);
+        }
+    </style>
+</head>
+<body>
+    <header class="cyberpunk-header">
+        <div class="logo glitch" data-text="CHIRAG MISHRA">CHIRAG MISHRA</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="neon-hover">HOME</a></li>
+                <li><a href="about.html" class="active neon-hover">ABOUT</a></li>
+                <li><a href="projects.html" class="neon-hover">PROJECTS</a></li>
+                <li><a href="contact.html" class="neon-hover">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cyberpunk-main">
+        <section class="about-section">
+            <h1 class="glitch2" data-text="// ABOUT_ME">ABOUT ME</h1>
+        
+
+            <div class="cyber-card">
+                <div class="avatar-container">
+                    <img src="C:\Users\chira\OneDrive\Pictures\WhatsApp Image 2025-05-12 at 00.19.26_5574f70e.jpg" alt="Chirag Avatar">
+                </div>
+
+                <div class="bio">
+                    <p>> NAME: <span class="highlight">CHIRAG MISHRA</span></p>
+                    <p>> AGE: <span class="highlight">19</span></p>
+                    <p>> LOCATION: <span class="highlight">MUMBAI, INDIA</span></p>
+                    <p>> SPECIALIZATION: <span class="highlight">FRONT-END & FULL-STACK LEARNER</span></p>
+                    <p>> SKILLS: <span class="highlight">HTML, CSS, JS, REACT, SQL, C++, C#, JAVA, PYTHON & MORE</span></p>
+                    <p>> EDUCATION: <span class="highlight">TY BSc.IT, SK SOMAIYA UNIVERSITY</span></p>
+                    <p>> INTERESTS: <span class="highlight">AIML, 3D WEB, AUTOBOTS</span></p>
+                    <p>> STATUS: <span class="highlight">LEARNING & OPEN TO INTERNSHIPS</span></p>
+                </div>
+            </div>
+
+                        <h3>WEB CATALOGUE</h3>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>FRONT-END</h3>
+                    <ul>
+                        <li>HTML5 <span class="skill-bar" style="width: 70%"></span></li>
+                        <li>CSS <span class="skill-bar" style="width: 65%"></span></li>
+                        <li>JavaScript <span class="skill-bar" style="width: 50%"></span></li>
+                        <li>React <span class="skill-bar" style="width: 30%"></span></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>BACK-END</h3>
+                    <ul>
+                        <li>Java <span class="skill-bar" style="width: 70%"></span></li>
+                        <li>SQL <span class="skill-bar" style="width: 75%"></span></li>
+                        <li>Python <span class="skill-bar" style="width: 70%"></span></li>
+                        <li>C++ <span class="skill-bar" style="width: 65%"></span></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>DESIGN</h3>
+                    <ul>
+                        <li>UI/UX <span class="skill-bar" style="width: 65%"></span></li>
+                        <li>Canva <span class="skill-bar" style="width: 80%"></span></li>
+                        <li>Photoshop <span class="skill-bar" style="width: 65%"></span></li>
+                        <li>Illustrator <span class="skill-bar" style="width: 70%"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="cyberpunk-footer">
+        <p>© 2025 CHIRAG MISHRA | BUILT WITH 🩷 AND 🔥</p>
+        <div class="social-links">
+            <a href="https://github.com/chiragmishraa" class="neon-hover">GITHUB</a>
+            <a href="HTTPS://linkedin.com/in/chiragsupermacy" class="neon-hover">LINKEDIN</a>
+            <a href="https://drive.google.com/file/d/1Ckm7yy14dPcML0I86LKiCWiZZV4LkeH4/view?usp=sharing" class="neon-hover">RESUME</a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.skill-bar').forEach(el => {
+            const width = el.style.width;
+            el.style.width = '0';
+            setTimeout(() => el.style.width = width, 500);
+        });
+    </script>
+</body>
+</html>
