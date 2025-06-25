@@ -1,14 +1,13 @@
-/* index.html */
 
 :root {
-    --neon-pink: #ffffff;
-    --neon-blue: #000000;
+    --neon-pink: #c0bebe;
+    --neon-blue: #ffffff;
     --neon-purple: #ffffff;
-    --neon-green: #aaaaaa;
+    --neon-green: #ffffff;
     --dark-bg: #000000;
     --darker-bg: #8774b9;
     --text-color: #d1f7ff;
-    --glow: 0 0 10px;
+
 }
 
 * {

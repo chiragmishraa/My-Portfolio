@@ -113,6 +113,16 @@
       border: 1px solid #00fff7;
     }
 
+    .skill-category li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      color: #00fff7;
+      font-weight: bold;
+    }
+
+
     .skill-category h3 {
       border-bottom: 1px solid #00fff7;
       padding-bottom: 0.5rem;
@@ -127,7 +137,7 @@
       vertical-align: middle;
       border-radius: 4px;
       width: 0%;
-      transition: width 1s ease-in-out;
+      transition: width 5s ease-in-out;
     }
 
     nav ul {
@@ -158,17 +168,20 @@
       color: #00fff7;
     }
   </style>
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
   <header class="cyberpunk-header">
-    <div class="logo glitch" data-text="CHIRAG MISHRA">CHIRAG MISHRA</div>
+    <div data-aos="fade-down" data-aos-duration="1500" class="logo glitch" data-text="CHIRAG MISHRA">CHIRAG MISHRA</div>
     <nav>
       <ul>
-        <li><a href="index.html" class="neon-hover">HOME</a></li>
-        <li><a href="about.html" class="active neon-hover">ABOUT</a></li>
-        <li><a href="projects.html" class="neon-hover">PROJECTS</a></li>
-        <li><a href="contact.html" class="neon-hover">CONTACT</a></li>
+        <li><a href="index.html" class="neon-hover" data-aos="fade-down" data-aos-duration="1500">HOME</a></li>
+        <li><a href="about.html" class="active neon-hover" data-aos="fade-down" data-aos-duration="1500">ABOUT</a></li>
+        <li><a href="projects.html" class="neon-hover" data-aos="fade-down" data-aos-duration="1500">PROJECTS</a></li>
+        <li><a href="contact.html" class="neon-hover" data-aos="fade-down" data-aos-duration="1500">CONTACT</a></li>
       </ul>
     </nav>
   </header>
@@ -179,18 +192,18 @@
 
       <div class="cyber-card">
         <div class="avatar-container">
-          <img src="ME.png" alt="Chirag Avatar" />
+          <img src="ME.png"  data-aos="fade-up" alt="Chirag Avatar" />
         </div>
 
         <div class="bio">
-          <p>> NAME: <span class="highlight">CHIRAG MISHRA</span></p>
-          <p>> AGE: <span class="highlight">19</span></p>
-          <p>> LOCATION: <span class="highlight">MUMBAI, INDIA</span></p>
-          <p>> SPECIALIZATION: <span class="highlight">FRONT-END & FULL-STACK LEARNER</span></p>
-          <p>> SKILLS: <span class="highlight">HTML, CSS, JS, REACT, SQL, C++, C#, JAVA, PYTHON & MORE</span></p>
-          <p>> EDUCATION: <span class="highlight">TY BSc.IT, SK SOMAIYA UNIVERSITY</span></p>
-          <p>> INTERESTS: <span class="highlight">AIML, 3D WEB, AUTOBOTS & MORE</span></p>
-          <p>> STATUS: <span class="highlight">LEARNING & OPEN TO INTERNSHIPS</span></p>
+          <p data-aos="fade-right" data-aos-duration="1000">> NAME: <span class="highlight">CHIRAG MISHRA</span></p>
+          <p data-aos="fade-right" data-aos-duration="1000">> AGE: <span class="highlight">19</span></p>
+          <p data-aos="fade-right" data-aos-duration="1000">> LOCATION: <span class="highlight">MUMBAI, INDIA</span></p>
+          <p data-aos="fade-right" data-aos-duration="1000">> SPECIALIZATION: <span class="highlight">FRONT-END & FULL-STACK LEARNER</span></p>
+          <p data-aos="fade-right" data-aos-duration="1000">> SKILLS: <span class="highlight">HTML, CSS, JS, REACT, SQL, C++, C#, JAVA, PYTHON & MORE</span></p>
+          <p data-aos="fade-right" data-aos-duration="1000">> EDUCATION: <span class="highlight">TY BSc.IT, SK SOMAIYA UNIVERSITY</span></p>
+          <p data-aos="fade-right" data-aos-duration="1000">> INTERESTS: <span class="highlight">AIML, 3D WEB, AUTOBOTS & MORE</span></p>
+          <p data-aos="fade-right" data-aos-duration="1000">> STATUS: <span class="highlight">LEARNING & OPEN TO INTERNSHIPS</span></p>
         </div>
       </div>
 
@@ -244,5 +257,10 @@
       setTimeout(() => el.style.width = width, 500);
     });
   </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 </html>

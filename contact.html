@@ -241,17 +241,20 @@
     }
 
   </style>
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
 
   <header>
-    <div class="logo">CHIRAG MISHRA</div>
+    <div class="logo" data-aos="fade-down" data-aos-duration="1500" >CHIRAG MISHRA</div>
     <nav>
       <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-        <li><a href="contact.html" class="active">CONTACT</a></li>
+        <li><a href="index.html" data-aos="fade-down" data-aos-duration="1500">HOME</a></li>
+        <li><a href="about.html" data-aos="fade-down" data-aos-duration="1500">ABOUT</a></li>
+        <li><a href="projects.html" data-aos="fade-down" data-aos-duration="1500">PROJECTS</a></li>
+        <li><a href="contact.html" data-aos="fade-down" data-aos-duration="1500" class="active">CONTACT</a></li>
       </ul>
     </nav>
   </header>
@@ -265,19 +268,19 @@
         <div class="info-card">
           <h3>DIRECT LINES</h3>
           <ul>
-            <li>> EMAIL: <a href="mailto:chiragmishra1710@gmail.com" class="highlight">chiragmishra1710@gmail.com</a></li>
-            <li>> PHONE: <span class="highlight">+91 9356277328</span></li>
-            <li>> DISCORD: <span class="highlight">heybot || NICK#9843</span></li>
+            <li data-aos="fade-down-right" data-aos-duration="2000">> EMAIL: <a href="mailto:chiragmishra1710@gmail.com" data-aos="fade-down-right" data-aos-duration="1500" class="highlight">chiragmishra1710@gmail.com</a></li>
+            <li data-aos="fade-down-right" data-aos-duration="1500">> PHONE: <span class="highlight" data-aos="fade-down-right" data-aos-duration="1500" >+91 9356277328</span></li>
+            <li data-aos="fade-down-right" data-aos-duration="1000">> DISCORD: <span class="highlight" data-aos="fade-down-right" data-aos-duration="1500" >heybot || NICK#9843</span></li>
           </ul>
         </div>
 
         <div class="info-card">
           <h3>SOCIAL LINKS</h3>
           <div class="social-grid">
-            <a href="https://github.com/chiragmishraa" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="HTTPS://linkedin.com/in/chiragsupermacy" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/chiragmishra.cm/?__pwa=1" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.snapchat.com/add/whitesoucepasta?share_id=HPWWySgQH8g&locale=en-US" class="social-icon" target="_blank"><i class="fab fa-snapchat"></i></a> 
+            <a href="https://github.com/chiragmishraa" data-aos="fade-down-right" data-aos-duration="500" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="HTTPS://linkedin.com/in/chiragsupermacy" data-aos="fade-down-right" data-aos-duration="500" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/chiragmishra.cm/?__pwa=1" data-aos="fade-down-right" data-aos-duration="500" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.snapchat.com/add/whitesoucepasta?share_id=HPWWySgQH8g&locale=en-US" data-aos="fade-down-right" data-aos-duration="500" class="social-icon" target="_blank"><i class="fab fa-snapchat"></i></a> 
           </div>
         </div>
       </div>
@@ -286,12 +289,12 @@
         <form id="cyberForm" action="https://formspree.io/f/xzzgraby" method="POST">
           
           <div class="form-group">
-            <label for="name">YOUR NAME</label>
-            <input type="text" id="name" name="name" required />
+            <label for="name" data-aos="fade-left" data-aos-duration="1500">YOUR NAME</label>
+            <input type="text" id="name" name="name" required data-aos="fade-right" data-aos-duration="1500"/>
           </div>
 
           <div class="form-group">
-            <label for="email">EMAIL ADDRESS</label>
+            <label for="email" data-aos="fade-left" data-aos-duration="1500">EMAIL ADDRESS</label>
             <input 
               type="email" 
               id="email" 
@@ -299,11 +302,12 @@
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
               title="Enter a valid email address (e.g. example@domain.com)" 
               required 
+              data-aos="fade-right" data-aos-duration="1500"
             />
           </div>
 
           <div class="form-group">
-            <label for="contact">CONTACT</label>
+            <label for="contact" data-aos="fade-left" data-aos-duration="1500">CONTACT</label>
             <input 
               type="tel" 
               id="contact" 
@@ -312,17 +316,18 @@
               inputmode="tel" 
               title="Enter a valid contact number and use country code if possible" 
               required 
+              data-aos="fade-right" data-aos-duration="1500"
             />
           </div>
 
 
           <div class="form-group">
-            <label for="message">MESSAGE</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message" data-aos="fade-left" data-aos-duration="1500">MESSAGE</label>
+            <textarea id="message" name="message" rows="5" required data-aos="fade-right" data-aos-duration="1500"></textarea>
           </div>
 
           <div class="form-group">
-            <button type="submit" class="cyber-button">SEND</button>
+            <button type="submit" class="cyber-button"data-aos="fade-up" data-aos-duration="500">SEND</button>
           </div>
           
         </form>
@@ -338,6 +343,11 @@
       <a href="https://drive.google.com/file/d/1Ckm7yy14dPcML0I86LKiCWiZZV4LkeH4/view?usp=sharing">RESUME</a>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
 </body>
 </html>

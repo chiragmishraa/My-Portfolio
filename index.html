@@ -7,26 +7,29 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="logo5.png">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <div class="cyberpunk-bg"></div>
     <div class="scanlines"></div>
     
     <header class="cyberpunk-header">
-        <div class="logo glitch" data-text="CHIRAG MISHRA">CHIRAG MISHRA</div>
+        <div class="logo glitch" data-text="CHIRAG MISHRA" data-aos="fade-down" data-aos-duration="1500">CHIRAG MISHRA</div>
         <nav>
             <ul>
-                <li><a href="index.html" class="active neon-hover">HOME</a></li>
-                <li><a href="about.html" class="neon-hover">ABOUT</a></li>
-                <li><a href="projects.html" class="neon-hover">PROJECTS</a></li>
-                <li><a href="contact.html" class="neon-hover">CONTACT</a></li>
+                <li><a href="index.html" class="active neon-hover" data-aos="fade-down" data-aos-duration="1500">HOME</a></li>
+                <li><a href="about.html" class="neon-hover" data-aos="fade-down" data-aos-duration="1500">ABOUT</a></li>
+                <li><a href="projects.html" class="neon-hover" data-aos="fade-down" data-aos-duration="1500">PROJECTS</a></li>
+                <li><a href="contact.html" class="neon-hover" data-aos="fade-down" data-aos-duration="1500">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="cyberpunk-main">
         <section class="hero">
-            <h1 class="glitch" data-text="WELCOME TO MY PORTFOLIO">WELCOME TO MY PORTFOLIO</h1>
+            <h1 data-aos="flip-up" data-aos-duration="900" class="glitch" data-text="WELCOME TO MY PORTFOLIO">WELCOME TO MY PORTFOLIO</h1>
             <p class="subtitle">SOFTWARE ENGINEER || DESIGNER || DEVELOPER </p>
             <div class="terminal">
                 <div class="terminal-header">
@@ -55,5 +58,13 @@
     </footer>
 
     <script src="script.js"></script>
+
+    
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        
 </body>
 </html>
