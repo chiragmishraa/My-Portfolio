@@ -7,7 +7,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="logo5.png">
   <style>
+    html, body {
+      height: 100%;
+    }
     body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
       margin: 0;
       font-family: 'Rajdhani', sans-serif;
       background: linear-gradient(to right, #130625, #131313, #1b0516);
@@ -69,6 +75,7 @@
       padding: 2rem 2rem;
       max-width: 1200px;
       margin: 0 auto;
+      flex: 1 0 auto;
     }
 
     .projects-section h1 {
@@ -88,12 +95,18 @@
     }
 
     .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
       gap: 2rem;
+      justify-content: center;
+      align-items: stretch;
     }
 
     .project-card {
+      flex: 1 1 320px;
+      max-width: 350px;
+      min-width: 280px;
+      margin-bottom: 0;
       background: #1a1a1a;
       border-radius: 10px;
       overflow: hidden;
@@ -168,6 +181,7 @@
       background: #000;
       border-top: 1px solid #00fff7;
       color: #777;
+      flex-shrink: 0;
     }
 
 
@@ -309,7 +323,7 @@
 
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>STANDARD_CALCULATOR_APP</h3>
+                        <h3>MOBILE_CALCULATOR</h3>
                         <span class="project-badge">ANDROID</span>
                     </div>
                     <div class="project-image" style="background-image: linear-gradient(to bottom right, #d300c5, #5e00a3);">
@@ -326,7 +340,7 @@
 
                 <div class="project-card">
                       <div class="project-header">
-                          <h3>TEXT-TO-TEXT_CALCULATOR_APP</h3>
+                          <h3>TEXT-TO-TEXT_CALCULATOR</h3>
                           <span class="project-badge">ANDROID</span>
                       </div>
                   <div class="project-image" style="background-image: linear-gradient(to bottom right, #ffb347, #ffcc33);">
