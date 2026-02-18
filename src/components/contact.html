@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chirag's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" href="../public/logo5.png">
+
+  <link rel="stylesheet" href="contact.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo" data-aos="fade-down" data-aos-duration="1500" ><b>CHIRAG MISHRA</b></div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html" data-aos="fade-down" data-aos-duration="1500">HOME</a></li>
+        <li><a href="about.html" data-aos="fade-down" data-aos-duration="1500">ABOUT</a></li>
+        <li><a href="projects.html" data-aos="fade-down" data-aos-duration="1500">PROJECTS</a></li>
+        <li><a href="contact.html" data-aos="fade-down" data-aos-duration="1500" class="active">CONTACT</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="glitch">ESTABLISH UPLINK</h1>
+    <p class="subtitle">Drop me a message or connect via direct lines</p>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="info-card">
+          <h3>DIRECT LINES</h3>
+          <ul>
+            <li data-aos="fade-down-right" data-aos-duration="2000">> EMAIL: <a href="mailto:chiragmishra1710@gmail.com" data-aos="fade-down-right" data-aos-duration="1500" class="highlight">chiragmishra1710@gmail.com</a></li>
+            <li data-aos="fade-down-right" data-aos-duration="1500">> PHONE: <span class="highlight" data-aos="fade-down-right" data-aos-duration="1500" >+91 9356277328</span></li>
+            <li data-aos="fade-down-right" data-aos-duration="1000">> DISCORD: <span class="highlight" data-aos="fade-down-right" data-aos-duration="1500" >heybot || NICK#9843</span></li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>SOCIAL LINKS</h3>
+          <div class="social-grid">
+            <a href="https://github.com/chiragmishraa" data-aos="fade-down-right" data-aos-duration="500" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="HTTPS://linkedin.com/in/chiragsupermacy" data-aos="fade-down-right" data-aos-duration="500" class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/chiragmishra.cm/?__pwa=1" data-aos="fade-down-right" data-aos-duration="500" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.snapchat.com/add/whitesoucepasta?share_id=HPWWySgQH8g&locale=en-US" data-aos="fade-down-right" data-aos-duration="500" class="social-icon" target="_blank"><i class="fab fa-snapchat"></i></a> 
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form id="cyberForm" action="https://formspree.io/f/xzzgraby" method="POST">
+          
+          <div class="form-group">
+            <label for="name" data-aos="fade-left" data-aos-duration="1500">YOUR NAME</label>
+            <input type="text" id="name" name="name" required data-aos="fade-right" data-aos-duration="1500"/>
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-aos="fade-left" data-aos-duration="1500">EMAIL ADDRESS</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+              title="Enter a valid email address (e.g. example@domain.com)" 
+              required 
+              data-aos="fade-right" data-aos-duration="1500"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="contact" data-aos="fade-left" data-aos-duration="1500">CONTACT</label>
+            <input 
+              type="tel" 
+              id="contact" 
+              name="contact" 
+              maxlength="20" 
+              inputmode="tel" 
+              title="Enter a valid contact number and use country code if possible" 
+              required 
+              data-aos="fade-right" data-aos-duration="1500"
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="message" data-aos="fade-left" data-aos-duration="1500">MESSAGE</label>
+            <textarea id="message" name="message" rows="5" required data-aos="fade-right" data-aos-duration="1500"></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="cyber-button"data-aos="fade-up" data-aos-duration="500">SEND</button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 CHIRAG | BUILT WITH <span class="footer-emoji heart">🩷</span> AND <span class="footer-emoji">🔥</span></p>
+    <div class="social-links">
+      <a href="https://github.com/chiragmishraa">GITHUB</a>
+      <a href="HTTPS://linkedin.com/in/chiragsupermacy">LINKEDIN</a>
+      <a href="https://drive.google.com/file/d/1fH1TiBUNc6lU-2nQb7RS4ox-leBEHs14/view?usp=drive_link">RESUME</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    function updateHamburgerDisplay() {
+      var a = window.innerWidth;
+      var b = window.innerHeight;
+      var navList = document.querySelector('.nav-list');
+      var hamburger = document.getElementById('hamburger-menu');
+      if (!navList || !hamburger) return;
+      if (a < b) {
+        hamburger.style.display = 'flex';
+        navList.style.display = 'none';
+      } else {
+        hamburger.style.display = 'none';
+        navList.style.display = 'flex';
+      }
+    }
+    window.addEventListener('resize', updateHamburgerDisplay);
+    window.addEventListener('DOMContentLoaded', function() {
+      updateHamburgerDisplay();
+      var hamburger = document.getElementById('hamburger-menu');
+      var navList = document.querySelector('.nav-list');
+      if (hamburger && navList) {
+        hamburger.addEventListener('click', function() {
+          if (navList.style.display === 'flex' || navList.style.display === '') {
+            navList.style.display = 'none';
+          } else {
+            navList.style.display = 'flex';
+            navList.style.flexDirection = 'column';
+            navList.style.background = '#111';
+            navList.style.position = 'absolute';
+            navList.style.top = '60px';
+            navList.style.right = '20px';
+            navList.style.zIndex = '1000';
+            navList.style.borderRadius = '8px';
+            navList.style.padding = '10px 20px';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

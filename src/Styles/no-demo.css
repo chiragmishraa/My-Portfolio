@@ -1,0 +1,77 @@
+body {
+  background: #0d0d0d;
+  color: #00fff7;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  text-shadow: 0 0 10px #00fff7;
+}
+
+p {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+.glitch {
+  color: #ff0000;
+  text-shadow: 0 0 5px #4d0011, 0 0 15px #ff0037;
+  animation: glitch 1.2s infinite alternate;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-1px, 1px); }
+  40% { transform: translate(-2px, -1px); }
+  60% { transform: translate(1px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  border: 2px solid #00fff7;
+  background: transparent;
+  color: #00fff7;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  position: relative;
+  box-shadow: 0 0 10px #00fff7;
+  overflow: hidden;
+}
+
+.back-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #00fff7;
+  opacity: 0.15;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.back-btn:hover::before {
+  width: 300%;
+  height: 300%;
+}
+
+.back-btn:hover {
+  color: #000;
+  background: #00fff7;
+  box-shadow: 0 0 10px #00fff7, 0 0 10px #00fff7;
+  transform: scale(1.05);
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404: Project on Vacation</title>
+  <link rel="icon" type="image/png" href="../public/logo5.png">
+
+  <link rel="stylesheet" href="no-demo.css">
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+  <script src="script.js"></script>
+    <script>
+      function updateHamburgerDisplay() {
+        var a = window.innerWidth;
+        var b = window.innerHeight;
+        var navList = document.querySelector('.nav-list');
+        var hamburger = document.getElementById('hamburger-menu');
+        if (!navList || !hamburger) return;
+        if (a < b) {
+          hamburger.style.display = 'flex';
+          navList.style.display = 'none';
+        } else {
+          hamburger.style.display = 'none';
+          navList.style.display = 'flex';
+        }
+      }
+      window.addEventListener('resize', updateHamburgerDisplay);
+      window.addEventListener('DOMContentLoaded', function() {
+        updateHamburgerDisplay();
+        var hamburger = document.getElementById('hamburger-menu');
+        var navList = document.querySelector('.nav-list');
+        if (hamburger && navList) {
+          hamburger.addEventListener('click', function() {
+            if (navList.style.display === 'flex' || navList.style.display === '') {
+              navList.style.display = 'none';
+            } else {
+              navList.style.display = 'flex';
+              navList.style.flexDirection = 'column';
+              navList.style.background = '#111';
+              navList.style.position = 'absolute';
+              navList.style.top = '60px';
+              navList.style.right = '20px';
+              navList.style.zIndex = '1000';
+              navList.style.borderRadius = '8px';
+              navList.style.padding = '10px 20px';
+            }
+          });
+        }
+      });
+    </script>
+    <style>
+          .hamburger span {
+            background: silver !important;
+          }
+      /* Removed invalid nested CSS. Only valid rules remain. */
