@@ -176,6 +176,45 @@ nav a:hover::after,
   box-sizing: border-box;
 }
 
+/* Description clamp */
+.project-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: none;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.4rem;
+}
+
+.project-desc.expanded {
+  display: block;
+  overflow-y: auto;
+  max-height: 120px;
+  -webkit-line-clamp: unset;
+}
+
+.desc-toggle {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 0.75rem;
+  font-family: 'Rajdhani', sans-serif;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s ease;
+}
+
+.desc-toggle:hover {
+  color: #ccc;
+}
+
 .project-tech span {
   background: rgb(255 255 255 / 6%);
   color: #e6e5e5;
